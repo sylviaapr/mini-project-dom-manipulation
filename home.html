@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/style/styles.css" />
+    <title>Home | Movieflakes</title>
+  </head>
+  <body>
+    <!-- START OF NAVBAR -->
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-dark background-color"
+    >
+      <div class="container-md">
+        <a class="navbar-brand" href="home.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-snow2"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 16a.5.5 0 0 1-.5-.5v-1.293l-.646.647a.5.5 0 0 1-.707-.708L7.5 12.793v-1.086l-.646.647a.5.5 0 0 1-.707-.708L7.5 10.293V8.866l-1.236.713-.495 1.85a.5.5 0 1 1-.966-.26l.237-.882-.94.542-.496 1.85a.5.5 0 1 1-.966-.26l.237-.882-1.12.646a.5.5 0 0 1-.5-.866l1.12-.646-.884-.237a.5.5 0 1 1 .26-.966l1.848.495.94-.542-.882-.237a.5.5 0 1 1 .258-.966l1.85.495L7 8l-1.236-.713-1.849.495a.5.5 0 1 1-.258-.966l.883-.237-.94-.542-1.85.495a.5.5 0 0 1-.258-.966l.883-.237-1.12-.646a.5.5 0 1 1 .5-.866l1.12.646-.237-.883a.5.5 0 0 1 .966-.258l.495 1.849.94.542-.236-.883a.5.5 0 0 1 .966-.258l.495 1.849 1.236.713V5.707L6.147 4.354a.5.5 0 1 1 .707-.708l.646.647V3.207L6.147 1.854a.5.5 0 1 1 .707-.708l.646.647V.5a.5.5 0 0 1 1 0v1.293l.647-.647a.5.5 0 1 1 .707.708L8.5 3.207v1.086l.647-.647a.5.5 0 1 1 .707.708L8.5 5.707v1.427l1.236-.713.495-1.85a.5.5 0 1 1 .966.26l-.236.882.94-.542.495-1.85a.5.5 0 1 1 .966.26l-.236.882 1.12-.646a.5.5 0 0 1 .5.866l-1.12.646.883.237a.5.5 0 1 1-.26.966l-1.848-.495-.94.542.883.237a.5.5 0 1 1-.26.966l-1.848-.495L9 8l1.236.713 1.849-.495a.5.5 0 0 1 .259.966l-.883.237.94.542 1.849-.495a.5.5 0 0 1 .259.966l-.883.237 1.12.646a.5.5 0 0 1-.5.866l-1.12-.646.236.883a.5.5 0 1 1-.966.258l-.495-1.849-.94-.542.236.883a.5.5 0 0 1-.966.258L9.736 9.58 8.5 8.866v1.427l1.354 1.353a.5.5 0 0 1-.707.708l-.647-.647v1.086l1.354 1.353a.5.5 0 0 1-.707.708l-.647-.647V15.5a.5.5 0 0 1-.5.5z"
+            />
+          </svg>
+          Movieflakes</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                target="_blank"
+                href="home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" target="_blank" href="about.html"
+                >About</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search shows."
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn button-style text-white"
+                type="button"
+                id="button-addon2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+    <!-- START OF ALERTS -->
+    <div class="container-md">
+      <div class="alert alert-secondary alert-style mt-4 mb-4" role="alert">
+        New Movies on September 2022, Check It Out!
+      </div>
+    </div>
+    <!-- END OF ALERTS -->
+    <!-- START OF CAROUSEL -->
+    <div class="container-md">
+      <div
+        id="myCarousel"
+        class="carousel slide carousel-fade mb-4"
+        data-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner shadow-style rounded">
+          <div
+            class="carousel-item active"
+            style="background-image: url(assets/image/carousel1.jpg)"
+          ></div>
+          <div
+            class="carousel-item"
+            style="background-image: url(assets/image/carousel2.jpg)"
+          ></div>
+          <div
+            class="carousel-item"
+            style="background-image: url(assets/image/carousel3.jpg)"
+          ></div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- END OF CAROUSEL -->
+    <!-- START OF LINEBREAKS -->
+    <div class="container-md">
+      <hr class="bg-light lines-style mt-5 mb-5" />
+    </div>
+    <!-- END OF LINEBREAKS -->
+    <!-- START OF CARDS -->
+    <div class="container-md">
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <!-- SPIDERMAN -->
+        <div class="col-3">
+          <div
+            class="card text-center text-white background-color shadow-style hover-style"
+          >
+            <img
+              src="assets/image/spiderman.jpg"
+              class="card-img-top round ed"
+              alt="spiderman_nowayhome"
+            />
+            <div class="card-body body-style">
+              <!-- MODAL TRIGGER -->
+              <button
+                class="btn button-style text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#spiderman"
+              >
+                Details & More
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- VENOM -->
+        <div class="col-3">
+          <div
+            class="card text-center text-white background-color shadow-style hover-style"
+          >
+            <img
+              src="assets/image/venom.jpg"
+              class="card-img-top rounded"
+              alt="venom"
+            />
+            <div class="card-body body-style">
+              <!-- MODAL TRIGGER -->
+              <button
+                class="btn button-style text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#venom"
+              >
+                Details & More
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- THE100 -->
+        <div class="col-3">
+          <div
+            class="card text-center text-white background-color shadow-style hover-style"
+          >
+            <img
+              src="assets/image/100.jpg"
+              class="card-img-top rounded"
+              alt="the100"
+            />
+            <div class="card-body body-style">
+              <!-- MODAL TRIGGER -->
+              <button
+                class="btn button-style text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#the100"
+              >
+                Details & More
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- GOODDOCTOR -->
+        <div class="col-3">
+          <div
+            class="card text-center text-white background-color shadow-style hover-style"
+          >
+            <img
+              src="assets/image/gooddoctor.jpg"
+              class="card-img-top rounded"
+              alt="gooddoctor"
+            />
+            <div class="card-body body-style">
+              <!-- MODAL TRIGGER -->
+              <button
+                class="btn button-style text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#gooddoctor"
+              >
+                Details & More
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- FRIENDS -->
+        <div class="col-3">
+          <div
+            class="card text-center text-white background-color shadow-style hover-style"
+          >
+            <img
+              src="assets/image/friends.jpg"
+              class="card-img-top rounded"
+              alt="friends"
+            />
+            <div class="card-body body-style">
+              <!-- MODAL TRIGGER -->
+              <button
+                class="btn button-style text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#friends"
+              >
+                Details & More
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- FLASH -->
+        <div class="col-3">
+          <div
+            class="card text-center text-white background-color shadow-style hover-style"
+          >
+            <img
+              src="assets/image/flash.jpg"
+              class="card-img-top rounded"
+              alt="flash"
+            />
+            <div class="card-body body-style">
+              <!-- MODAL TRIGGER -->
+              <button
+                class="btn button-style text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#flash"
+              >
+                Details & More
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- FIVEFEETAPART -->
+        <div class="col-3">
+          <div
+            class="card text-center text-white background-color shadow-style hover-style"
+          >
+            <img
+              src="assets/image/fivefeetapart.jpg"
+              class="card-img-top rounded"
+              alt="fivefeetapart"
+            />
+            <div class="card-body body-style">
+              <!-- MODAL TRIGGER -->
+              <button
+                class="btn button-style text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#fivefeetapart"
+              >
+                Details & More
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- NOTEBOOK -->
+        <div class="col-3">
+          <div
+            class="card text-center text-white background-color shadow-style hover-style"
+          >
+            <img
+              src="assets/image/notebook.jpg"
+              class="card-img-top rounded"
+              alt="notebook"
+            />
+            <div class="card-body body-style">
+              <!-- MODAL TRIGGER -->
+              <button
+                class="btn button-style text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#notebook"
+              >
+                Details & More
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- ORPHAN -->
+        <div class="col-3">
+          <div
+            class="card text-center text-white background-color shadow-style hover-style"
+          >
+            <img
+              src="assets/image/orphan.webp"
+              class="card-img-top rounded"
+              alt="orphan"
+            />
+            <div class="card-body body-style">
+              <!-- MODAL TRIGGER -->
+              <button
+                class="btn button-style text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#orphan"
+              >
+                Details & More
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- MIRACLE -->
+        <div class="col-3">
+          <div
+            class="card text-center text-white background-color shadow-style hover-style"
+          >
+            <img
+              src="assets/image/miracle.jpg"
+              class="card-img-top rounded"
+              alt="miraclesfromheaven"
+            />
+            <div class="card-body body-style">
+              <!-- MODAL TRIGGER -->
+              <button
+                class="btn button-style text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#miracle"
+              >
+                Details & More
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- LALALAND -->
+        <div class="col-3">
+          <div
+            class="card text-center text-white background-color shadow-style hover-style"
+          >
+            <img
+              src="assets/image/lalaland.jpg"
+              class="card-img-top rounded"
+              alt="lalaland"
+            />
+            <div class="card-body body-style">
+              <!-- MODAL TRIGGER -->
+              <button
+                class="btn button-style text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#lalaland"
+              >
+                Details & More
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- WHIPLASH -->
+        <div class="col-3">
+          <div
+            class="card text-center text-white background-color shadow-style hover-style"
+          >
+            <img
+              src="assets/image/whiplash.webp"
+              class="card-img-top rounded"
+              alt="whiplash"
+            />
+            <div class="card-body body-style">
+              <!-- MODAL TRIGGER -->
+              <button
+                class="btn button-style text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#whiplash"
+              >
+                Details & More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF CARDS -->
+    <!-- START OF MODAL -->
+    <!-- MODAL SPIDERMAN -->
+    <div
+      class="modal fade"
+      id="spiderman"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content text-white background-color">
+          <img
+            src="assets/image/spiderman.jpg"
+            class="rounded"
+            alt="spiderman_nowayhome"
+          />
+          <div class="modal-body">
+            <h5 class="modal-title">Spider-man: No Way Home</h5>
+            <p>13+</p>
+            <p>
+              Tom Holland returns as the wisecracking web-slinger, alongside an
+              all-star cast that includes Zendaya, Benedict Cumberbatch, Willem
+              Dafoe and more.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn button-style text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-play"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+                />
+              </svg>
+              Play Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL VENOM -->
+    <div
+      class="modal fade"
+      id="venom"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content text-white background-color">
+          <img src="assets/image/venom.jpg" class="rounded" alt="venom" />
+          <div class="modal-body">
+            <h5 class="modal-title">Venom: Let There Be Carnage</h5>
+            <p>13+</p>
+            <p>
+              Andy Serkis ("The Lord of the Rings" films) takes on directing
+              duties for this sequel. A "no-frills, rock-and-roll superhero
+              flick," says Vox.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn button-style text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-play"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+                />
+              </svg>
+              Play Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL THE100 -->
+    <div
+      class="modal fade"
+      id="the100"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content text-white background-color">
+          <img src="assets/image/100.jpg" class="rounded" alt="the100" />
+          <div class="modal-body">
+            <h5 class="modal-title">The 100</h5>
+            <p>18+</p>
+            <p>
+              A century after Earth was devastated by a nuclear apocalypse, 100
+              space station residents are sent to the planet to determine
+              whether it's habitable.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn button-style text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-play"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+                />
+              </svg>
+              Play Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL GOODDOCTOR -->
+    <div
+      class="modal fade"
+      id="gooddoctor"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content text-white background-color">
+          <img
+            src="assets/image/gooddoctor.jpg"
+            class="rounded"
+            alt="gooddoctor"
+          />
+          <div class="modal-body">
+            <h5 class="modal-title">Good Doctor</h5>
+            <p>18+</p>
+            <p>
+              He saves lives by seeing what others cant. Dr. Murphy is young
+              surgeon with autism and eveything to prove in this drama from the
+              creator of "House".
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn button-style text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-play"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+                />
+              </svg>
+              Play Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL FRIENDS -->
+    <div
+      class="modal fade"
+      id="friends"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content text-white background-color">
+          <img src="assets/image/friends.jpg" class="rounded" alt="friends" />
+          <div class="modal-body">
+            <h5 class="modal-title">Friends</h5>
+            <p>13+</p>
+            <p>
+              This hit sitcom follows the merry misadventures of six
+              20-something pals as they navigate the pittals of work, life and
+              love in 1990s Manhattan.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn button-style text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-play"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+                />
+              </svg>
+              Play Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL FLASH -->
+    <div
+      class="modal fade"
+      id="flash"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content text-white background-color">
+          <img src="assets/image/flash.jpg" class="rounded" alt="flash" />
+          <div class="modal-body">
+            <h5 class="modal-title">Flash</h5>
+            <p>13+</p>
+            <p>
+              This sci-fi action series featuring Grane Gustin is based on the
+              DC Comics superhero.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn button-style text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-play"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+                />
+              </svg>
+              Play Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL FIVEFEETAPART -->
+    <div
+      class="modal fade"
+      id="fivefeetapart"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content text-white background-color">
+          <img
+            src="assets/image/fivefeetapart.jpg"
+            class="rounded"
+            alt="fivefeetapart"
+          />
+          <div class="modal-body">
+            <h5 class="modal-title">Five Feet Apart</h5>
+            <p>13+</p>
+            <p>
+              A teen with cystic fibrosis shakes up her daily routin and
+              challenges hospital protocol when she falls for a fellow patient.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn button-style text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-play"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+                />
+              </svg>
+              Play Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL NOTEBOOK -->
+    <div
+      class="modal fade"
+      id="notebook"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content text-white background-color">
+          <img src="assets/image/notebook.jpg" class="rounded" alt="notebook" />
+          <div class="modal-body">
+            <h5 class="modal-title">The Notebook</h5>
+            <p>18+</p>
+            <p>
+              Two young lovers are torn apart by war and class differences in
+              the 1940s in this adaptation of Nicholas Sparks's bestselling
+              novel.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn button-style text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-play"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+                />
+              </svg>
+              Play Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL ORPHAN -->
+    <div
+      class="modal fade"
+      id="orphan"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content text-white background-color">
+          <img src="assets/image/orphan.webp" class="rounded" alt="orphan" />
+          <div class="modal-body">
+            <h5 class="modal-title">Orphan</h5>
+            <p>18+</p>
+            <p>
+              Kate and John Coleman adopt 9-year-old Esther from an orphanage,
+              but it doesn't take long for Kate to see through Esther's angelic
+              facade.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn button-style text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-play"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+                />
+              </svg>
+              Play Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL MIRACLE -->
+    <div
+      class="modal fade"
+      id="miracle"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content text-white background-color">
+          <img
+            src="assets/image/miracle.jpg"
+            class="rounded"
+            alt="miraclesfromheaven"
+          />
+          <div class="modal-body">
+            <h5 class="modal-title">Miracles from Heaven</h5>
+            <p>13+</p>
+            <p>
+              When her daughter is diagnosed with a terminal illness, devout mom
+              Christy suffers a crisis of faith as she fights desperately to
+              save her little girl.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn button-style text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-play"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+                />
+              </svg>
+              Play Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL LALALAND -->
+    <div
+      class="modal fade"
+      id="lalaland"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content text-white background-color">
+          <img src="assets/image/lalaland.jpg" class="rounded" alt="lalaland" />
+          <div class="modal-body">
+            <h5 class="modal-title">La La Land</h5>
+            <p>13+</p>
+            <p>
+              Career aspirations run up against bittersweet romance in
+              modern-day Los Angeles, as two artists face a heartbreaking
+              dilemma.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn button-style text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-play"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+                />
+              </svg>
+              Play Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL WHIPLASH -->
+    <div
+      class="modal fade"
+      id="whiplash"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content text-white background-color">
+          <img
+            src="assets/image/whiplash.webp"
+            class="rounded"
+            alt="whiplash"
+          />
+          <div class="modal-body">
+            <h5 class="modal-title">Whiplash</h5>
+            <p>16+</p>
+            <p>
+              Driven by his demanding music theater, drummer andrew is
+              determined to succeed as a jazz musician -- even if it destroys
+              his personality.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn button-style text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-play"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+                />
+              </svg>
+              Play Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF MODAL -->
+    <!-- START OF LINEBREAKS -->
+    <div class="container-md">
+      <hr class="bg-light lines-style mt-5 mb-5" />
+    </div>
+    <!-- END OF LINEBREAKS -->
+    <!-- STARTS OF FORM FOOTER-->
+    <div class="container-md">
+      <footer class="text-white">
+        <div class="text-center">
+          <h2>Get in touch</h2>
+          <p class="lead">Do not hesitate to contact us.</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form action="">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="janedoe@yahoo.com"
+                  class="form-control"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="name"
+                  id="name"
+                  placeholder="Jane Doe"
+                  class="form-control"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input
+                  type="subject"
+                  id="subject"
+                  placeholder="Type a subject here"
+                  class="form-control"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="query" class="form-label">Write a message</label>
+                <textarea
+                  name="query"
+                  id="query"
+                  placeholder="Type a message here"
+                  cols="30"
+                  rows="7"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn button-style text-white">
+                  Send!
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="text-center mt-5 mb-4">
+          <p class="text-white footer-style">
+            Copyright © Sylvia Aprillinda ∙ All the rights reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+    <!-- END OF FORM FOOTER-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/javascript/home.js"></script>
+    <script src="assets/javascript/all.js"></script>
+  </body>
+</html>
